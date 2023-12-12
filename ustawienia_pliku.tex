@@ -1,0 +1,36 @@
+\usepackage[a4paper]{geometry}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{polski} % do znaków polskich
+\usepackage[main=polish,english]{babel}
+\usepackage{titlesec} % do edycji formatowania sekcji i podsekcji (\titleformat)
+\usepackage{blindtext}
+\usepackage[T1]{fontenc}
+\usepackage{times} % czcionka podstawowa Times New Roman
+\usepackage{indentfirst} % wciecia akapitow
+\usepackage{amsmath} 
+\counterwithin{equation}{section} %numeracja wzorkow 
+\usepackage{float} % to jest potrzebne do [H] przy figure
+% [H] obok begin{figure} powoduje ze plik jest na pdfie w tym miejscu jak w 
+% kodzie, inaczej ustawia sie on jakos na gorze strony albo inaczej
+% niz chce
+\usepackage{xcolor} % do zmieniania koloru poszczegolnych blokow tekstu
+\usepackage{ragged2e} % do wyrownywania tekstu
+%\usepackage[none]{hyphenat} % wylaczenie dzielenia wyrazow na koncu wiersza
+\usepackage{caption} % pozwala uzywac \\ w opisach grafik
+\usepackage{tabularx} % potrzebne do tabelki z danymi
+%\usepackage{fixltx2e} % subscripts bez math mode'a, nie jest potrzebne od 2015 xd
+\usepackage[hidelinks]{hyperref} % pozwala na interaktywny spis tresci
+\usepackage{gensymb} % m.in. dodaje znak stopni
+\usepackage{wrapfig} % do umieszczania obrazow w tekscie
+\usepackage{subfig}
+
+% ustawienie formatowania sekcji i podsekcji
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsubsection}{\normalsize\bfseries}
+\titleformat*{\paragraph}{\large\bfseries}
+\titleformat*{\subparagraph}{\large\bfseries}
+\geometry{lmargin=3.5cm, rmargin=2.5cm, tmargin=2.5cm, bmargin=2.5cm} % marginesy
+\setlength\parindent{1cm} % wciecie 
+\renewcommand\thesubsubsection{\alph{subsubsection})} % ustawienie a,b,c...
+% jako numeracji podpodsekcji
