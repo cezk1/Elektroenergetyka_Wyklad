@@ -4,6 +4,8 @@
 \usepackage{enumitem}
 \setlist[enumerate, 1]{label=\textbf{\arabic{*})}} % ustawienie pogrubionej numeracji
 
+\newcommand{\pytanie}[2]{\item \textbf{#1} \\}
+
 \title{Odpowiedzi na pytania do wykładu}
 \author{Cezary Karolak}
 \date{2023Z}
@@ -141,8 +143,8 @@
         - średnia generacja rozproszona - od 5 MW do 50 MW\\
         - duża generacja rozproszona - od 50 MW do 150 MW
         
-    \item \textbf{Podać główne zalety i wady elektrowni wiatrowych.}
-    
+    \pytanie{Podać główne zalety i wady elektrowni wiatrowych.}
+
         Zalety elektrowni wiatrowych:\\
         - wykorzystanie niewyczerpalnych zasobów energii\\
         - brak emisji szkodliwych substancji do środowiska\\
@@ -158,6 +160,70 @@
     \item \textbf{Wyjaśnić zasadę działania i cechy charakterystyczne spalinowego silnika tłokowego.}
     \item \textbf{Narysować i omówić schemat ideowy przyłączenia mikroturbiny do sieci elektroenergetycznej.}
 \end{enumerate}
+
+\section{Wykład 7 -- Moc i energia w systemie elektroenergetycznym}
+\begin{enumerate}
+    \pytanie{Przedstaw trójkąt mocy i wynikające z niego zależności pomiędzy występującymi 
+    w nim mocami.}
+
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.3\linewidth]{images/wyklad7_1.png}
+            \caption*{Trójkąt mocy}
+        \end{figure}
+        \begin{equation*}
+            P = S \cdot \cos\varphi
+        \end{equation*}
+        \begin{equation*}
+            Q = S \cdot \sin\varphi
+        \end{equation*}
+        \begin{equation*}
+            S = P + jQ
+        \end{equation*}
+
+    \pytanie{Wyjaśnij, z czym silnie związane są zmiany mocy czynnej i biernej w systemie 
+    elektroenergetycznym.}
+
+        Wpływając na wartość mocy czynnej jednocześnie wpływa się mocno na kąt mocy ($\delta$) i odwrotnie.
+        Wpływając na wartość mocy biernej jednocześnie wpływa się na wartość napięcia.
+        Wynika to z poniższych wzorów:
+        \begin{equation*}
+            P = U I \cos\varphi = \frac{E U}{X} \sin\delta
+        \end{equation*}
+        \begin{equation*}
+            Q = U I \sin\varphi = \frac{E U}{X} \cos\delta - \frac{U^2}{X}
+        \end{equation*}
+
+    \pytanie{Przedstaw główne odbiorniki mocy biernej.}
+
+        
+
+    \pytanie{Przedstaw model obwodowy linii elektroenergetycznej wysokiego napięcia.}
+
+    \pytanie{Do czego służy energetyczny równoważnik mocy biernej?}
+
+    \pytanie{Przedstaw negatywne skutki przesyłania mocy biernej przez sieć 
+    elektroenergetyczną.}
+
+    \pytanie{Wyjaśnij, za pomocą odpowiedniego wzoru, dlaczego obecność mocy biernej 
+    zmniejsza zdolność przepustową linii elektroenergetycznych.}
+
+    \pytanie{Przedstaw naturalne i sztuczne metody kompensacji mocy biernej.}
+
+    \pytanie{Podaj zalety i wady stosowania kondensatorów do kompensacji mocy biernej.}
+
+    \pytanie{Przedstaw możliwe rodzaje kompensacji mocy biernej w zależności od miejsca 
+    instalacji baterii kondensatorów.}
+
+    \pytanie{Który rodzaj kompensacji mocy biernej jest najbardziej skuteczny, a który 
+    najmniej? Odpowiedź uzasadnij.}
+
+    \pytanie{Jaki jest wzór na moc baterii do centralnej kompensacji mocy biernej?}
+
+    \pytanie{Przedstaw metody zmniejszania strat mocy w sieci elektroenergetycznej.}
+
+\end{enumerate}
+
 
 
 \end{document}
